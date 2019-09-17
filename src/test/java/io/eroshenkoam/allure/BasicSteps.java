@@ -37,6 +37,7 @@ public class BasicSteps {
     @Когда("^я их складываю$")
     public void multiply() throws Throwable {
         sum = a + b + c;
+        throw new NullPointerException("Can not multiply two numbers");
     }
 
     @Тогда("^сумма равна (\\d+)$")
